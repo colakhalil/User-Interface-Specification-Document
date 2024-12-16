@@ -72,7 +72,7 @@ A checkbox to hide rows where "Enabled" is `false`.
    - **Username** 
    - **Display Name** 
    - **Phone**
-- **Email** 
+   - **Email** 
    - **User Roles** (to choose from Guest, Admin, SuperAdmin)  
    - **Enabled** check box to set the status of the user  
 
