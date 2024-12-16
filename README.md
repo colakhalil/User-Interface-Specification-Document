@@ -37,20 +37,18 @@ A checkbox to hide rows where "Enabled" is `false`.
 
 ### 2.2 User Form The form to the right is used to **add a new user**. The fields include:
 
-| **Field Name**      | **Type**           | **Required** | **Notes**                    |
-|----------------------|--------------------|--------------|------------------------------|
-| **Username**         | Textbox            | Yes          | Input username for the user. |
-| **Display Name**     | Textbox            | No           | Optional display name.       |
-| **Phone**            | Textbox            | No           | Optional phone number.       |
-| **Email**            | Textbox            | Yes          | User's email address.        |
-| **User Roles**       | Dropdown           | Yes          | Options: Guest, Admin, SuperAdmin. |
-| **Enabled**          | Checkbox (toggle)  | Yes          | Checked = Active, Unchecked = Disabled. |
+| **Field Name**      | **Type**           |  **Notes**                    |
+|----------------------|--------------------|------------------------------|
+| **Username**         | Textbox            | Input username for the user. |
+| **Display Name**     | Textbox            | Optional display name.       |
+| **Phone**            | Textbox            | Optional phone number.       |
+| **Email**            | Textbox            | User's email address.        |
+| **User Roles**       | Dropdown           | Options: Guest, Admin, SuperAdmin. |
+| **Enabled**          | Checkbox (toggle)  | Checked = Active, Unchecked = Disabled. |
 
 
 #### **Behavior:**
 - **User Roles Dropdown:** Enables one to select predefined roles (Guest, Admin, SuperAdmin).
-- **Proof:**
-- **Username** and **Email** are obligatory fields.
 - Email field must be in a valid email format.
 - **Action Taken:**
 - Clicking **"Save User"** saves the user in the table.
