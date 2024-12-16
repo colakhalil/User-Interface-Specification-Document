@@ -55,20 +55,52 @@ A checkbox to hide rows where "Enabled" is `false`.
 
 ---
 
-## 3. Page Behavior
+## 3. Page Behavior 
 
-### 3.1 Standard View
-- By default, all enabled users are displayed in the user table.
-The "Hide Disabled User" checkbox is cleared.
+### 3.1 Default View 
 
-Adding a Second User 3.2
-1. Populate the user form fields.
-2. Click Save User.
-- **On Accomplishment:**
-- The new user is in the table now.
-- **On failure:**
-- A pop-up error message is thrown (e.g., "Username or Email cannot be empty").
+* The user table, by default, displays all **enabled users**.
+* By default, the **"Hide Disabled User"** checkbox is **unchecked**.
+* The user can interact with the table as follows:
+ 
+* **Sorting:** By default, the data in the table is sorted in ascending/descending order by column header clicking.
 
-### 3.3 User Filtering - Check the **"Hide Disabled User"** checkbox to hide rows where "Enabled" is set to `false`.
+---
+ 
+### 3.2 Adding a New User 
+1. Fill in the **User Form** fields with the necessary information:  
+   - **Username** 
+   - **Display Name** 
+   - **Phone**
+- **Email** 
+   - **User Roles** (to choose from Guest, Admin, SuperAdmin)  
+   - **Enabled** check box to set the status of the user  
 
-### 3.4 Data Preservation - Click **Save User** to save the user information. - Provide visual feedback on success or failure.
+2. Click **"Save User"** to submit the form.  
+
+   - **On Success:**  
+     - A confirmation message is displayed: * "User added successfully.
+- The new user dynamically appears in the table.  
+
+   - **On Failure:**  
+     - A pop-up error message appears with the problem:  
+       - *"Username or Email cannot be empty."*
+       - *"Please enter a valid email address."*
+
+---
+
+### 3.3 User Filtering 
+- To hide disabled users from the table: 
+   - Check the **"Hide Disabled User"** checkbox. 
+   - Rows where **Enabled** is set to `false` will be hidden. 
+
+- To show all users again: 
+   - Uncheck the **"Hide Disabled User"** checkbox. 
+
+---
+
+### 3.4 Data Preservation
+- Click **"Save User"** to validate and persist user information.  
+- **Visual Feedback:**  
+  - On success, show confirmation.  
+  - On failure, show clear error messages to the user.
